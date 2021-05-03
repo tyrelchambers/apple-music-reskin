@@ -4,7 +4,10 @@ import './InputWrapper.css';
 const InputWrapper = (props) => {
   return (
     <div className="mb-4 mt-4 flex flex-col">
-      <label htmlFor={props.for} className="form-label text-gray-600 font-bold">
+      <label
+        htmlFor={props.for}
+        className="form-label text-gray-600 font-bold mb-2"
+      >
         {props.label}
       </label>
       {props.children}

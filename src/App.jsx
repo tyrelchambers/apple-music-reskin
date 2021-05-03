@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.global.css';
 import Home from './pages/Home/Home';
 import routes from './routes/index.routes';
@@ -11,6 +11,7 @@ const AppRoutes = () =>
       path={route.slug}
       component={route.component}
       render={route.render}
+      exact
     />
   ));
 
