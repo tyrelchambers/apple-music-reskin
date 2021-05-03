@@ -1,6 +1,6 @@
 import {
   faHome,
-  faListAlt,
+  faList,
   faMusic,
   faUser,
 } from '@fortawesome/free-solid-svg-icons';
@@ -22,6 +22,6 @@ export const navRoutes = [
   },
   {
     slug: '/playlists',
-    icon: <FontAwesomeIcon icon={faListAlt} className="text-gray-700" />,
+    icon: <FontAwesomeIcon icon={faList} className="text-gray-700" />,
   },
 ];
