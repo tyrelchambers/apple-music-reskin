@@ -14,8 +14,8 @@ const data = {
 
 const Player = () => {
   return (
-    <div className="player-wrapper bg-gray-800 rounded-lg shadow-lg">
-      <div className="meta flex mr-20">
+    <div className="player-wrapper bg-gray-800 rounded-lg shadow-lg grid">
+      <div className="meta flex">
         <img src={data.image} alt="" className="player-album-image" />
         <div className="flex flex-col justify-center">
           <p className="font-bold text-white text-xl">{data.song}</p>
