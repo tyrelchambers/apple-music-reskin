@@ -2,7 +2,7 @@ import React from 'react';
 
 const PlayerProgress = () => {
   return (
-    <div className="flex items-center player-progress-wrapper">
+    <div className="flex items-center player-progress-wrapper col-span-5">
       <p className="text-gray-400 mr-4">0:00</p>
       <div className="player-progress-bar-wrapper">
         <div className="player-progress-bar"></div>

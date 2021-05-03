@@ -25,7 +25,7 @@ const PlayerControls = () => {
     );
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center col-span-2 justify-center">
       <div className="player-controls-btn-wrapper sec">
         <FontAwesomeIcon
           icon={faStepBackward}

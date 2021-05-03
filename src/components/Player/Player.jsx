@@ -14,8 +14,8 @@ const data = {
 
 const Player = () => {
   return (
-    <div className="player-wrapper bg-gray-800 rounded-lg shadow-lg grid">
-      <div className="meta flex">
+    <div className="player-wrapper bg-gray-800 rounded-lg shadow-lg grid grid-cols-12">
+      <div className="meta flex col-span-2">
         <img src={data.image} alt="" className="player-album-image" />
         <div className="flex flex-col justify-center">
           <p className="font-bold text-white text-xl">{data.song}</p>
@@ -26,7 +26,7 @@ const Player = () => {
       <PlayerControls />
       <PlayerProgress />
       <PlayerVolume />
-      <span className="p-4">
+      <span className="p-4 flex items-center">
         <FontAwesomeIcon icon={faQuoteRight} className="text-gray-300" />
       </span>
     </div>
