@@ -1,6 +1,7 @@
 import { faList, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import Player from '../../components/Player/Player';
 import Search from '../../components/Search/Search';
 import Nav from '../../layout/Nav/Nav';
 import Playlists from '../../layout/Playlists/Playlists';
@@ -42,6 +43,7 @@ const Dashboard = () => {
             <Playlists />
           </div>
         </main>
+        <Player />
       </div>
     </div>
   );

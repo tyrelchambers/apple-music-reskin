@@ -107,3 +107,11 @@ p {
   border-radius: 8px;
   margin-right: 0.5em;
 }
+
+.player-wrapper {
+  position: fixed;
+  height: 90px;
+  bottom: 10px;
+  left: 5rem;
+  right: 10px;
+}
