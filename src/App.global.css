@@ -110,8 +110,78 @@ p {
 
 .player-wrapper {
   position: fixed;
-  height: 90px;
+  height: 85px;
   bottom: 10px;
   left: 5rem;
   right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.player-album-image {
+  width: 65px;
+  height: 65px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+.player-controls-btn.main {
+  color: var(--white);
+}
+
+.player-controls-btn.sec {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.player-controls-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.player-controls-btn-wrapper.main {
+  color: var(--white);
+  background-color: var(--gray-700);
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.player-controls-btn-wrapper.sec {
+  color: var(--gray-500);
+}
+
+.player-progress-bar {
+  background-color: var(--white);
+  width: 75%;
+  height: 100%;
+}
+
+.player-progress-bar-wrapper {
+  display: flex;
+  flex: 1;
+  height: 7px;
+  width: 600px;
+  background-color: var(--gray-700);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.volume-wrapper {
+  height: 7px;
+  width: 100px;
+  background-color: var(--gray-700);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.volume {
+  background-color: var(--white);
+  width: 75%;
+  height: 100%;
 }

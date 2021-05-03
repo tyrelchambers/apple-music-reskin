@@ -18,12 +18,6 @@ const Dashboard = () => {
       <div className="flex flex-col w-full pt-4 pr-4 ">
         <div className="flex items-center">
           <Search />
-          <span className="p-4">
-            <FontAwesomeIcon
-              icon={faQuoteRight}
-              className="text-gray-800 opacity-50 hover:opacity-100"
-            />
-          </span>
 
           <span className="p-4">
             <FontAwesomeIcon
