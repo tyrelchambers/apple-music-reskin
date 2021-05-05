@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -23,6 +24,11 @@
         }
       })();
     </script>
+
+    <meta name="appleid-signin-client-id" content="[CLIENT_ID]" />
+    <meta name="appleid-signin-scope" content="[SCOPES]" />
+    <meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]" />
+    <meta name="appleid-signin-state" content="[STATE]" />
   </head>
   <body>
     <div id="root"></div>
@@ -49,5 +55,9 @@
         );
       }
     </script>
+    <script
+      type="text/javascript"
+      src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
+    ></script>
   </body>
 </html>

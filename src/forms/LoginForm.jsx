@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from 'react-router';
 import { MainButton } from '../components/Button/Button';
 import Input from '../components/Input/Input';
@@ -9,20 +9,18 @@ const LoginForm = () => {
 
   const submitHandler = () => {
     history.push('/dashboard');
-    console.log('heyey');
   };
 
   return (
     <form className="w-full">
-      <InputWrapper for="email" label="Apple ID">
-        <Input placeholder="Apple ID" type="text" name="email" />
-      </InputWrapper>
-
-      <InputWrapper for="email" label="Apple Password">
-        <Input placeholder="password" type="password" name="password" />
-      </InputWrapper>
-
-      <MainButton onClick={submitHandler}>Login</MainButton>
+      <div className="w-full h-10">
+        <div
+          id="appleid-signin"
+          data-color="black"
+          data-border="true"
+          data-type="sign in"
+        ></div>
+      </div>
     </form>
   );
 };
